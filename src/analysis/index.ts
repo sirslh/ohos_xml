@@ -30,7 +30,7 @@ export function loadXML(xmlString: string, oldFilePath: string, type: ResourceVa
         || type ==ResourceValue.dimen
     ) {
         analysisJsonNode(xmlContent, type,androidRoot)
-        fileName = oldFilePath.substring(oldFilePath.lastIndexOf("\\") + 1, oldFilePath.lastIndexOf(".")).concat(".josn")
+        fileName = oldFilePath.substring(oldFilePath.lastIndexOf("\\") + 1, oldFilePath.lastIndexOf(".")).concat(".json")
         fileType = "application/json;charset=utf-8"
     } else {
         xmlContent.push(XML_source)
